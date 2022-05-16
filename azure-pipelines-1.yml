@@ -20,7 +20,7 @@ steps:
 - task: SpecFlowPlus@0
   inputs:
     generatorSource: 'FeatureFolder'
-    projectFilePath: '**/Shapes.Specflow/Features/*.feature'
+    projectFilePath: '**/Shapes.Specflow/*.csproj'
     
 - task: DotNetCoreCLI@2
   displayName: 'Build Artifact'
