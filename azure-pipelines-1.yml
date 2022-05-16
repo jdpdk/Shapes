@@ -17,6 +17,12 @@ steps:
     command: 'test'
     projects: '**/Shapes.Test/*.csproj'
 
+- task: SpecFlowPlus@0
+  inputs:
+    projectFilePath: '$(System.DefaultWorkingDirectory)'
+    projectLanguage: 'en'
+
+    
 - task: DotNetCoreCLI@2
   displayName: 'Build Artifact'
   inputs:
