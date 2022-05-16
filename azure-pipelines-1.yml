@@ -12,16 +12,16 @@ pool:
 steps:
 
 - task: DotNetCoreCLI@2
-  displayName: 'Test'
+  displayName: 'Test Xunit'
   inputs:
     command: 'test'
     projects: '**/Shapes.Test/*.csproj'
     
 - task: DotNetCoreCLI@2
-  displayName: 'Test'
+  displayName: 'Test SpecFlow'
   inputs:
     command: 'test'
-    projects: '**/Shapes.specflow/*.csproj'    
+    projects: '**/Shapes.Specflow/*.csproj'    
 
 - task: SpecFlowPlus@0
   inputs:
