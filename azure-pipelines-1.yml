@@ -16,6 +16,12 @@ steps:
   inputs:
     command: 'test'
     projects: '**/Shapes.Test/*.csproj'
+    
+- task: DotNetCoreCLI@2
+  displayName: 'Test'
+  inputs:
+    command: 'test'
+    projects: '**/Shapes.specflow/*.csproj'    
 
 - task: SpecFlowPlus@0
   inputs:
