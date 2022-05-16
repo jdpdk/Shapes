@@ -16,10 +16,3 @@ Scenario: Get circumference af square
 	And the width is 20
 	When the circumference is calculated
 	Then the result should be 80
-
-@SquareCircumference
-Scenario: Get circumference af square error
-	Given the height is 30
-	And the width is 20
-	When the circumference is calculated
-	Then the result should be 80
