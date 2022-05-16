@@ -19,8 +19,8 @@ steps:
 
 - task: SpecFlowPlus@0
   inputs:
-    generatorSource: 'FeatureFolder'
-    projectFilePath: '**/Shapes.Specflow/Features'
+    projectFilePath: '$(System.DefaultWorkingDirectory)'
+    projectLanguage: 'en'
 
     
 - task: DotNetCoreCLI@2
