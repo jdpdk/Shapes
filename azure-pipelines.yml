@@ -30,5 +30,13 @@ steps:
 
 - task: VSTest@2
   inputs:
+    testAssemblyVer2: |
+      **\Calculator.Spec.dll
+      !**\obj\**
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: SpecFlowPlus@0
+  inputs:
+    projectFilePath: '$(System.DefaultWorkingDirectory)'
+    projectLanguage: 'en'
