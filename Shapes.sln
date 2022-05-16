@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes", "Shapes\Shapes.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes.Services", "Shapes.Services\Shapes.Services.csproj", "{0DA9B308-F39A-404C-A0E9-A7AD6EE2BFDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes.Test", "Shapes.Test\Shapes.Test.csproj", "{8126BFB5-7FFC-49B0-BF83-20CCB926938F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes.Test", "Shapes.Test\Shapes.Test.csproj", "{8126BFB5-7FFC-49B0-BF83-20CCB926938F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes.Specflow", "Shapes.Specflow\Shapes.Specflow.csproj", "{D3884DE3-3693-4300-BD48-D30E23CAC4C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8126BFB5-7FFC-49B0-BF83-20CCB926938F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8126BFB5-7FFC-49B0-BF83-20CCB926938F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8126BFB5-7FFC-49B0-BF83-20CCB926938F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3884DE3-3693-4300-BD48-D30E23CAC4C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3884DE3-3693-4300-BD48-D30E23CAC4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3884DE3-3693-4300-BD48-D30E23CAC4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3884DE3-3693-4300-BD48-D30E23CAC4C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
