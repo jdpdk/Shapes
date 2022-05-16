@@ -31,7 +31,7 @@ steps:
 - task: VSTest@2
   inputs:
     testAssemblyVer2: |
-      **\Calculator.Spec.dll
+      **\Shapes.Specflow.dll
       !**\obj\**
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
