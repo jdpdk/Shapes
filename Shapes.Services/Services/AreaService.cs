@@ -1,4 +1,5 @@
-﻿using Shapes.Services.Interfaces;
+﻿using Shapes.Services.DTO;
+using Shapes.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +10,24 @@ namespace Shapes.Services.Services
 {
     public  class AreaService
     {
-        public void CalculateArea(IEnumerable<IArea> shapes)
+        public double CalculateArea(IEnumerable<IArea> shapes)
         {
-            double result = 0.0;
-            foreach (IArea area in shapes)
+            double totalArea = 0.0;
+            foreach (IArea shape in shapes)
             {
-                result += area.Area();
+                totalArea += shape.Area();
             }
+            return totalArea;
+        }
+
+        public double CalculateArea(ShapesDTO shapes)
+        {
+            double area = 0.0;
+            area += CalculateArea(shapes.Circles);
+            area += CalculateArea(shapes.Squares);
+            area += CalculateArea(shapes.Triangles);
+
+            return area;
         }
     }
 
