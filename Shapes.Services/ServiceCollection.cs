@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Shapes.Services.Interfaces;
 using Shapes.Services.Services;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace Shapes.Services
     {
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
-            services.AddScoped<AreaService>();
+            services.AddScoped<IAreaService, AreaService>();
             return services;
         }
     }

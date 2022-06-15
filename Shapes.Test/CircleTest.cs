@@ -30,8 +30,6 @@ namespace Shapes.Test
 
         [Theory]
         [InlineData(1, 6.28319)]
-        [InlineData(2, 12.56637)]
-        [InlineData(42, 263.894)]
         public void Circle_Calculate_Circumference(int radius, double result)
         {
             //Arrange

@@ -19,7 +19,7 @@ namespace Shapes.Specflow.StepDefinitions
             square.Height = number;
         }
 
-        [Given("the width is (.*)")]
+        [Given("the width is (.*)")] 
         public void GivenWidthIs(int number)
         {
             square.Width = number;

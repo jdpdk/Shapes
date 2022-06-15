@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Shapes.Services.Services
 {
-    public  class AreaService
+    public  class AreaService : IAreaService
     {
         public double CalculateArea(IEnumerable<IArea> shapes)
         {

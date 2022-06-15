@@ -2,7 +2,7 @@
 
 namespace Shapes.Services
 {
-    public class Circle: IArea, ICircumference
+    public class Circle: IArea, ICircumference, IDeameter
     {
         public int Radius { get; set; }
 
@@ -14,6 +14,11 @@ namespace Shapes.Services
         public double Circumference()
         {
             return (2 * Math.PI) * Radius;
+        }
+
+        public double Deameter()
+        {
+            return Radius * 2;
         }
     }
 }
